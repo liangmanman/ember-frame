@@ -1,4 +1,6 @@
 <div class="jumbo">
   <div class="right tomster"></div>
-  <h2>Welcome!</h2>
+  {{#each model as |project|}}
+    <h1>{{project.title}}</h1>
+  {{/each}}
 </div>
